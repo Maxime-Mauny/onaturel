@@ -2,7 +2,7 @@
 
 if (!function_exists('onaturel_scripts')):
 
-    function oagency_scripts()
+    function onaturel_scripts()
     {
         wp_enqueue_style(
             'onaturel-style-css',
