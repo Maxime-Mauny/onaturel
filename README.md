@@ -4,8 +4,8 @@
 ## Les Membres
 
 - Maxime Mauny            Chargé de projet et lead-front
-    - Helio Cruz          Git master et lead-back   
-    - Miles Hippocrate    Product Owner  
+- Helio Cruz          Git master et lead-back   
+- Miles Hippocrate    Product Owner et Référent technique (WooCommerce) 
 
 
 
@@ -25,7 +25,7 @@ veulent contribuer en quelque sorte à la préservation de la nature.
 ##  Les Technos utilisées
 
 - Wordpress
-    - Woocommerce
+    - WooCommerce
     - PHP
     - Npm
     - Js
