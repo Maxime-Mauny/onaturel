@@ -1,22 +1,47 @@
-.nav-bar {
+header {
     padding: 0.8em 2em 0.8em 2em;
+    line-height: 3em;
     display: flex;
+    background-color: $gris-fonce;
+    
+    
 
-    img {
-        width: 60px;
-    }
-    .logo {
-        span {
+    
+
+    .left {  
+        display: flex;     
+        
+        .logo {
+                       
             img {
                 margin-top: -0.5em;
-            }            
+                width: 60px;
+            }          
         }
 
-        a{
-            color: $green;
-            font-size: 3em;
-            font-weight: bold;
-            padding-top: 2em;            
+        .nav-header {
+            display: flex;
+            
+            a {
+                color: $green;
+                font-size: 1.2em;
+                font-weight: bold;
+                padding-left: 2em;                          
+            }
         }
     }
+
+    .user {
+        display: flex;       
+        margin: 0.5em 2em 0 5.5em;
+        
+        input {
+            height: 2em;
+        }
+         i {
+             font-size: 1.5em;
+             padding: 0 0.2em 0 0.2em;
+         }
+    }
+
 }
