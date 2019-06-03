@@ -13,7 +13,10 @@ function onaturel_add_dashboard_widgets()
 function onaturel_dashboard_widget_function()
 {
     ?>
-    <h3>Un site fait par Helio Cruz, Miles, Max </h3>
+    <h3>Un site fait par </h3>
+    <h5>Maxime Mauny</h5>
+    <h5>Helio Cruz</h5>
+    <h5>Miles Hippocrate</h5>
     <p>Voulez-vous nos employer ?</p>
     <p>www.oclock.io</p>
     <?php       
