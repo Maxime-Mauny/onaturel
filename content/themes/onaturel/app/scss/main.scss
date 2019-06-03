@@ -4,4 +4,16 @@
 @import
      '~reset-css/sass/reset', 
      '~font-awesome/scss/font-awesome',
-     "~bootstrap/scss/bootstrap";
+     '~bootstrap/scss/bootstrap';
+
+@import
+     'layout/articles', 
+     'layout/blog',
+     'layout/header',
+     'layout/footer';
+
+@import
+     'component/article', 
+     'component/carousel-product',
+     'component/carousel',
+     'component/nav-bar';

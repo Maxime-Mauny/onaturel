@@ -1,0 +1,22 @@
+.nav-bar {
+    padding: 0.8em 2em 0.8em 2em;
+    display: flex;
+
+    img {
+        width: 60px;
+    }
+    .logo {
+        span {
+            img {
+                margin-top: -0.5em;
+            }            
+        }
+
+        a{
+            color: $green;
+            font-size: 3em;
+            font-weight: bold;
+            padding-top: 2em;            
+        }
+    }
+}
