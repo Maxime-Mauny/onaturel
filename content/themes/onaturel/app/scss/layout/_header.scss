@@ -1,47 +1,58 @@
 header {
-    padding: 0.8em 2em 0.8em 2em;
-    line-height: 3em;
+    padding: 0.8em 0 0.8em 0.8em;
+    
     display: flex;
+    flex-wrap: wrap;
     background-color: $gris-fonce;
-    
-    
+    width: 100%;
 
-    
-
-    .left {  
-        display: flex;     
+    .left {      
         
         .logo {
-                       
+            @media (max-width: 500px) {               
             img {
-                margin-top: -0.5em;
-                width: 60px;
-            }          
+                padding-top: 0.6em;
+                width: 50px;
+            }
+            }
+        
+
+            @media (max-width: 500px) {
+            span {
+                display: none;
+            }
+            }
         }
 
         .nav-header {
-            display: flex;
             
             a {
-                color: $green;
-                font-size: 1.2em;
+                color: $blanc;
+                font-size: 1em;
                 font-weight: bold;
-                padding-left: 2em;                          
+                padding-left: 0.5em; 
+                margin-right: 0.5em;                         
             }
         }
     }
 
     .user {
-        display: flex;       
-        margin: 0.5em 2em 0 5.5em;
+        display: flex;
+        text-align: right;       
+        margin: 1em 0.5em 0 1.5em;;
         
         input {
-            height: 2em;
+            font-size: 0.7em;
+            width: 7em;
+            height: 1.7em;
+            padding-left: 0.3em;
         }
          i {
-             font-size: 1.5em;
+             font-size: 1.2em;
+             color: $blanc;
              padding: 0 0.2em 0 0.2em;
          }
     }
 
 }
+

@@ -1,3 +1,7 @@
-html {
-    background-color: $gris-fonce;
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    width: auto;
 }
