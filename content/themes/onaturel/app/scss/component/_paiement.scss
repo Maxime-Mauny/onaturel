@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     
     .info {
         background-color: $blanc;
@@ -25,6 +25,24 @@
             font-size: 0.5em;
             color: rgb(110, 109, 109);
             line-height: 0.9em;
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .infos {
+        padding: 3em 9em 3em 9em;
+        .info {    
+            max-width: 22%;
+            margin: 0.3em 0.1em 0.3em 0.1em; 
+            padding: 0.8em 0.8em 0.5em 0.8em;
+
+            p {
+                font-size: 0.9em;
+            }
+            .aside {
+                font-size: 0.7em;
+            }
         }
     }
 }

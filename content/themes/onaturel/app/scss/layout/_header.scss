@@ -1,3 +1,4 @@
+
 header {
     padding: 0.8em 0 0.1em 0.8em;
     display: flex;
@@ -26,7 +27,10 @@ header {
                 color: $green;
                 font-size: 2.2em;
                 font-weight: bold;
-                margin: 0 1.5em 0 0.1em;
+                margin: 0 0.5em 0 0.1em;
+            }
+            a:hover {
+                text-decoration: none;
             }
 
             @media (max-width: 770px) {
@@ -37,13 +41,16 @@ header {
         }
 
         .nav-header {
+            line-height: 1.2em;
+            padding-top: 0.2em;
                         
             a {
                 color: $blanc;
-                font-size: 1em;
+                font-size: 0.8em;
                 font-weight: bold;
                 padding-left: 0.5em; 
-                margin-right: 0.7em;                         
+                margin-right: 0.7em;
+                text-transform: uppercase;                       
             }
             a:hover{
                 color: $green;
@@ -53,7 +60,6 @@ header {
 
     @media (min-width: 770px) {
         .nav-header {
-            margin-right: 6em;
                    
             ul {
                 li {
@@ -79,6 +85,8 @@ header {
     }
 
     .user {
+        position: absolute;
+        right: 0px;
         margin: 1em 0.5em 0 1.5em;;
         
         input {
@@ -98,5 +106,21 @@ header {
         }
     }
 
+    @media (min-width: 900px) {
+    .user {
+        
+        input {
+            font-size: 0.9em;
+            width: 8em;
+            height: 1.9em;
+            padding-left: 0.4em;
+        }
+         i {
+             font-size: 1.5em;
+             color: $blanc;
+             padding: 0 0.3em 0 0.3em;
+         }
+    }
+}
 }
 

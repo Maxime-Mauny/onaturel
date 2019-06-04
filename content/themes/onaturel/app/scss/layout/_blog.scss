@@ -41,7 +41,7 @@
                     font-weight: bold;
                 }
 
-                @media (min-width: 770px) {
+                @media (min-width: 670px) {
                     a {
                         color: $green;
                         font-weight: bold;
@@ -53,7 +53,7 @@
                     }
                                 
                 }
-                @media (max-width: 770px) {
+                @media (max-width: 670px) {
                     a {
                         display: none;
                     }
@@ -63,7 +63,7 @@
                     font-size: 0.6em;
                 }
 
-                @media (min-width: 770px) {
+                @media (min-width: 670px) {
                     button {
                         display: none;
                     }
@@ -73,4 +73,51 @@
         }
     }
 }
+@media (min-width: 670px) {
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .post {
+        width: 49%;
+        height: 330px;
+
+        img {
+            height: 230px; 
+            width: 100%;
+
+        }
+    }
+}
+}
+@media (min-width: 1080px) {
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        .post {
+            width: 24%;
+            height: 450px;
+            font-size: 1.6em;
+
+            img {
+                height: 250px; 
+                width: 100%;
+    
+            }
+        }
+}
+.blog {
+    
+    .title-blog {
+    
+        p {
+            font-size: 2.1em;
+            }
+    }
+}
+}
+ 
 

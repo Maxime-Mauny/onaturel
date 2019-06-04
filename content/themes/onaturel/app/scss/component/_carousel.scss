@@ -5,5 +5,27 @@
 }
 
 .carousel-item {
-  height: 600px;
+  height: 530px;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon { 
+  height: 30px; 
+  width: 30px; 
+  outline: black; 
+  background-color: rgba(0, 0, 0, 0.3); 
+  background-size: 100%, 100%; 
+  border-radius: 50%; 
+  border: 1px solid black; 
+} 
+
+@media (min-width: 900px) {
+.carousel-item {
+  height: 590px;
+}
+}
+
+@media (min-width: 1080px) {
+  .carousel-item {
+    height: 730px;
+  }
+  }
