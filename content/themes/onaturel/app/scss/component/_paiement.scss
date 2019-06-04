@@ -1,0 +1,29 @@
+.infos {
+    background-image: url(/images/paiement/fond.jpeg);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    .info {
+        background-color: $blanc;
+        margin: 1em 0.5em 0.5em 0.5em; 
+        padding: 0.5em 0.5em 0 0.5em;
+        width: 44%;
+        line-height: 0.2em;
+        text-align: center;
+
+        i {
+            color: $green;
+            padding-bottom: 0.5em;
+        }
+        p {
+            font-size: 0.6em;
+        }
+        .aside {
+            font-size: 0.5em;
+            color: rgb(110, 109, 109);
+            line-height: 0.9em;
+        }
+    }
+}

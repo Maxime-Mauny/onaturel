@@ -9,15 +9,14 @@
      '~font-awesome/scss/font-awesome',
      '~bootstrap/scss/bootstrap';
 
-@import
-     'layout/articles', 
+@import 
      'layout/blog',
      'layout/header',
      'layout/footer';
 
 @import
-     'component/article',
      'component/carousel-product',
      'component/carousel',
      'component/categories',
-     'component/nav-bar';
+     'component/nav-bar',
+     'component/paiement';

@@ -1,6 +1,5 @@
 header {
     padding: 0.8em 0 0.8em 0.8em;
-    
     display: flex;
     flex-wrap: wrap;
     background-color: $gris-fonce;
@@ -9,23 +8,35 @@ header {
     .left {      
         
         .logo {
-            @media (max-width: 500px) {               
-            img {
-                padding-top: 0.6em;
-                width: 50px;
+            @media (max-width: 770px) {               
+                img {
+                    width: 50px;
+                }      
             }
+
+            @media (min-width: 770px) {               
+                img {
+                    padding-bottom: 1em;
+                    width: 50px;
+                }      
             }
         
+            span {
+                color: $green;
+                font-size: 2.2em;
+                font-weight: bold;
+                margin: 0 1.5em 0 0.1em;
+            }
 
             @media (max-width: 770px) {
-            span {
-                display: none;
-            }
+                span {
+                    display: none;
+                }
             }
         }
 
         .nav-header {
-            
+                        
             a {
                 color: $blanc;
                 font-size: 1em;
@@ -38,11 +49,35 @@ header {
                 text-decoration: none;
             }
         }
+
+    @media (min-width: 770px) {
+        .nav-header {
+            margin-right: 6em;
+                   
+            ul {
+                li {
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                    a {
+                        color: $blanc;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        padding-left: 0.5em; 
+                        margin-right: 0.5em;                         
+                    }
+                    a:hover{
+                        color: $green;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+        }
+    }
     }
 
     .user {
-        display: flex;
-        text-align: right;       
         margin: 1em 0.5em 0 1.5em;;
         
         input {
