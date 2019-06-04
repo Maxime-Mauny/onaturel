@@ -16,6 +16,8 @@ Template Name: Newsletters
 
 <?php foreach ($result as $print): ?>
 
+<label for="exampleFormControlInput1">Email address</label>
+<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 
 
 
