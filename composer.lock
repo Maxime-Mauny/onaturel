@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48af51941f8a54b3c60cc7eb1ef5087d",
+    "content-hash": "5bc785e8b81e4d9d86a03e4046845d09",
     "packages": [
         {
             "name": "composer/installers",
@@ -253,6 +253,45 @@
                 "wordpress"
             ],
             "time": "2018-11-09T20:10:38+00:00"
+        },
+        {
+            "name": "woocommerce/woocommerce",
+            "version": "3.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/woocommerce/woocommerce.git",
+                "reference": "dc950fa00a5fb57a061c8a00ea2990274b5f0f92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/woocommerce/woocommerce/zipball/dc950fa00a5fb57a061c8a00ea2990274b5f0f92",
+                "reference": "dc950fa00a5fb57a061c8a00ea2990274b5f0f92",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "1.6.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "4.1.2",
+                "nette/utils": "2.5.3",
+                "phpunit/phpunit": "6.5.14",
+                "woocommerce/woocommerce-sniffs": "0.0.6"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "scripts-description": {
+                    "test": "Run unit tests",
+                    "phpcs": "Analyze code against the WordPress coding standards with PHP_CodeSniffer",
+                    "phpcbf": "Fix coding standards warnings/errors automatically with PHP Code Beautifier"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "An eCommerce toolkit that helps you sell anything. Beautifully.",
+            "homepage": "https://woocommerce.com/",
+            "time": "2019-05-27T18:06:10+00:00"
         },
         {
             "name": "wpackagist-plugin/hello-dolly",
