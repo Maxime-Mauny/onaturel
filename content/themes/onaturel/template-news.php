@@ -7,21 +7,33 @@ Template Name: Newsletters
 
 <?php get_header(); ?>
 
+
 <?php
 
-    global $wpdb;
-    $result = $wpdb->get_results("SELECT * FROM newsletter");
+     function saveEmail(){
+
+        if(isset($_POST['submit'])){
+
+            global $wpdb;
+            $wpdb->insert('newsletter' , array('email' => $email));
+
+        }     
+
+        saveEmail();
+    }
+
+ 
 
 ?>
-
-<?php foreach ($result as $print): ?>
-
+ 
+ <form action="" method="POST">
+  <div class="form-group">
 <label for="exampleFormControlInput1">Email address</label>
 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
-
-
-<?php endforeach; ?>
+ 
  
 
  
