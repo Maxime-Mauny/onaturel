@@ -1,0 +1,57 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
+    background-color: $blanc;
+    padding: 0.5em;
+
+
+    .nav-contact {
+        ul {
+            li {
+                line-height: 1.2em;
+
+                a{
+                    font-size: 0.8em;
+                    color: $gris-fonce;
+                }
+                a:hover{
+                    color: $green;
+                }
+            }
+        }
+    }
+
+    .logo-copyright {
+        padding: 1.2em;
+        img {
+            padding-bottom: 0.9em;
+            width: 30px;
+        }
+        span {
+            color: $green;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        @media (max-width: 770px) {
+        p {
+            display: none;
+        }
+    }
+    }
+
+    .social-nav {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5em;
+
+        i {
+            color: $gris-fonce;
+            line-height: 1.1em;
+            font-size: 1.2em;
+        }
+        i:hover{
+            color: $green;
+        }
+    }
+}

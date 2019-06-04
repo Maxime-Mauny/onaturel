@@ -21,23 +21,23 @@
 
     .posts {
         background-color: $gris-fonce;
-        padding: 0 1.5em 1em 1.5em;
+        padding: 0 2em 1em 2em;
 
         .post {
             margin-bottom: 1.5em;
 
             img {
-                max-height: 250px; 
+                max-height: 190px; 
                 width: 100%;
 
             }
 
             .text {
                 background-color: $blanc;
-                padding: 0.3em;
+                padding: 0.5em;
 
                 h2 {
-                    font-size: 1.1em;
+                    font-size: 0.9em;
                     font-weight: bold;
                 }
 
@@ -60,7 +60,7 @@
                 }
             
                 p {
-                    font-size: 0.8em;
+                    font-size: 0.6em;
                 }
 
                 @media (min-width: 770px) {
