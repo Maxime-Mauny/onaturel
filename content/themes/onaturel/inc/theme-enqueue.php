@@ -8,14 +8,14 @@ if (!function_exists('onaturel_scripts')):
             'onaturel-style-css',
             get_theme_file_uri('/public/css/style.css'),
             [],
-            '1.0.1'
+            '1.0.2'
         );
 
         wp_enqueue_script(
             'onaturel-js',
             get_theme_file_uri('/public/js/app.js'),
             [],
-            '1.0.1',
+            '1.0.0',
             true
         );
     }
