@@ -1,0 +1,123 @@
+
+.blog {
+    
+    .title-blog {
+        text-align: center;
+        background-color: $gris-fonce;
+        padding-bottom: 0.6em; 
+        margin-bottom: -0.1em;
+    
+        hr {
+            width: 5.5em;
+        }
+    
+        p {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: $green;
+            }
+    }
+    
+
+    .posts {
+        background-color: $gris-fonce;
+        padding: 0 2em 1em 2em;
+
+        .post {
+            margin-bottom: 1.5em;
+
+            img {
+                max-height: 190px; 
+                width: 100%;
+
+            }
+
+            .text {
+                background-color: $blanc;
+                padding: 0.5em;
+
+                h2 {
+                    font-size: 0.9em;
+                    font-weight: bold;
+                }
+
+                @media (min-width: 670px) {
+                    a {
+                        color: $green;
+                        font-weight: bold;
+                        font-size: 0.7em;
+                    }
+                
+                    a:hover {
+                        color: $green;
+                    }
+                                
+                }
+                @media (max-width: 670px) {
+                    a {
+                        display: none;
+                    }
+                }
+            
+                p {
+                    font-size: 0.6em;
+                }
+
+                @media (min-width: 670px) {
+                    button {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media (min-width: 670px) {
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .post {
+        width: 49%;
+        height: 330px;
+
+        img {
+            height: 230px; 
+            width: 100%;
+
+        }
+    }
+}
+}
+@media (min-width: 1080px) {
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        .post {
+            width: 24%;
+            height: 450px;
+            font-size: 1.6em;
+
+            img {
+                height: 250px; 
+                width: 100%;
+    
+            }
+        }
+}
+.blog {
+    
+    .title-blog {
+    
+        p {
+            font-size: 2.1em;
+            }
+    }
+}
+}
+ 
+

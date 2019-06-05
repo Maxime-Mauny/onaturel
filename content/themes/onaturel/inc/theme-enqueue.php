@@ -8,7 +8,7 @@ if (!function_exists('onaturel_scripts')):
             'onaturel-style-css',
             get_theme_file_uri('/public/css/style.css'),
             [],
-            '1.0.0'
+            '1.0.1'
         );
 
         wp_enqueue_script(
