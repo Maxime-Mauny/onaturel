@@ -6,7 +6,11 @@
   <title><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
 <body> 
-     </header>
+<header>    
+    <?php  get_template_part('template-parts/header/header', 'nav'); ?>  
+</header> 
+     
  
