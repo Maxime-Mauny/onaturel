@@ -1,7 +1,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner justify-content-center">
             <div class="carousel-item active">
-              <img src="./images/carousel_main/book-plant.jpeg" class="d-flex w-100" alt="...">
+              <img src="<?php the_post_thumbnail_url(); ?>" class="d-flex w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                   <p class="h1 text-dark">Shopping</p>
                   <p class="h2 text-dark">Maison</p>
@@ -9,7 +9,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./images/carousel_main/plant.jpeg" class="d-flex w-100" alt="...">
+              <img src="<?php the_post_thumbnail_url(); ?>" class="d-flex w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                   <p class="h1 text-dark">Shopping</p>
                   <p class="h2 text-dark">Beautée/bien être</p>
@@ -17,7 +17,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./images/carousel_main/sky.jpeg" class="d-flex w-100" alt="...">
+              <img src="<?php the_post_thumbnail_url(); ?>" class="d-flex w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                   <p class="h1 text-dark">Shopping</p>
                   <p class="h2 text-dark">Puériculture</p>
