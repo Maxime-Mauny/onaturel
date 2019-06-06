@@ -1,11 +1,22 @@
 <section class="left">
           <div class="logo">
-            <a href="#"><img src="../images/icon/icon.png"alt="..."><span>Naturel</span></a> 
+            <a href="<?= home_url(); ?>"><img src="../images/icon/icon.png"alt="..."><span>Naturel</span></a> 
           </div>
           <div class="nav-header"> 
             <ul>     
-            <li> <a href="#">contact</a> </li>
-            <li> <a href="#">blog</a> </li>
+  <?php
+            $menu = wp_nav_menu([
+              'menu' => 'menu-top',
+              'theme_location' => 'menu-top',
+              'container' => 'a',
+              'container_class' => 'nav-header',
+              'echo' => true
+            ]);
+            $menu = strip_tags($menu, '<li></li>');
+
+            echo $menu;
+   ?>         
+
             </ul>          
           </div>
         </section>

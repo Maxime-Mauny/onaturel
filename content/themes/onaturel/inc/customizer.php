@@ -14,10 +14,18 @@ function onaturel_customize_register($wp_customize) {
 
 
  
-      //MAIN images
+      //Main Images
     
       $wp_customize->add_section('onaturel_main', [
-        'title' => 'Images',
+        'title' => 'Images des catégories',
+        'panel' => 'onaturel_theme_panel'
+    ]);
+
+     
+      //Main Carousel
+    
+      $wp_customize->add_section('onaturel_main_carousel', [
+        'title' => 'Images du Carousel',
         'panel' => 'onaturel_theme_panel'
     ]);
  

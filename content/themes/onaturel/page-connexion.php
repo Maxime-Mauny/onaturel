@@ -1,7 +1,8 @@
 <?php
-// fichier d'affichage des pages par default WP
+/*
+Template Name: Connexion
+*/
 ?>
-
 <?php get_header(); ?>
 
 <?php get_footer(); ?>

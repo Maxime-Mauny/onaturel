@@ -3,6 +3,7 @@
         <li>
   <?php
         $menu = wp_nav_menu([
+          'menu' => 'menu-bottom',
           'theme_location' => 'bottom',
           'container' => 'div',
           'div_class' => 'nav-contact',
@@ -14,10 +15,6 @@
         echo $menu;
   ?>      
 
-    <!--    <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Livraison et retours</a></li>
-        <li><a href="#">Paiement</a></li>
-        <li><a href="#">Droit d'annulation</a></li> -->
         </li>
       </ul>
     </div>
