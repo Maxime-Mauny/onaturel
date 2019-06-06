@@ -1,9 +1,24 @@
 <div class="nav-contact">
       <ul>
-        <li><a href="#">Mentions légales</a></li>
+        <li>
+  <?php
+        $menu = wp_nav_menu([
+          'theme_location' => 'bottom',
+          'container' => 'div',
+          'div_class' => 'nav-contact',
+          'echo' => true
+       ]);
+       
+        $menu = strip_tags ($menu, '<a></a>');
+
+        echo $menu;
+  ?>      
+
+    <!--    <li><a href="#">Mentions légales</a></li>
         <li><a href="#">Livraison et retours</a></li>
         <li><a href="#">Paiement</a></li>
-        <li><a href="#">Droit d'annulation</a></li>
+        <li><a href="#">Droit d'annulation</a></li> -->
+        </li>
       </ul>
     </div>
     <div class="logo-copyright">
