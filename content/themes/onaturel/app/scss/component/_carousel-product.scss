@@ -1,17 +1,36 @@
     
 .carousel-product {   
 
-    background-color: $small-carousel-bg;
-    /*width: 100vw;
-    height: 40vh;
-    //margin: 2em 0;
-    padding: .9em; */
+    background-color: $small-carousel-bg;    
+    padding: 1.2em;
 
-    /*.carousel-indicators--round li {
-        border-radius: 10px;
-        margin: 1px 3px;
-        height: 10px;
-        max-width: 10px;  
+    .small-carousel-thumbnail {
+        width: 13%/*240px*/;
+        height: 20%/*320px*/;        
+        background-color: $blanc;
+        padding: .8em .9em 2em .9em;
+        margin: .5em 1.2em;
 
-    }*/
+       .thumbnail {
+            margin-bottom: .7em;
+        }
+
+        
+        .pr-thumbnail-details {
+            color: $gris-fonce;
+            font-size: 1.1em;
+            font-weight: bold;
+            line-height: .8em;
+            margin: 1em 0;
+
+            .cart-icon {
+
+                height: 20px;
+                width: 20px;
+                display: inline;
+            }  
+            
+        }
+
+    }
 }
