@@ -9728,6 +9728,11 @@ footer {
           color: #22A557;
           text-decoration: none; } }
 
+.container-login {
+  display: inline-block;
+  width: 80%;
+  margin: 50px; }
+
 .infos {
   background-image: url(/images/paiement/fond.jpeg);
   width: 100%;
