@@ -23,28 +23,20 @@ if( isset($_POST['submit'] )){
             // S'il n'existe pas alors il va inserer l'information
                 if(empty($count))
                              {
-                         //  $data = array (
-                        //    'email' => $_POST ['email'] 
-                             // );
+                           $data = array (
+                           'email' => $_POST ['email'] 
+                              );
             // Insertion dans ma table newsletter
-         //   $wpdb->insert( "newsletter", $data);
-                 //   $status = 'L\'email a été bien envoyé'; 
-                      $status =  'L\'email est vide';             
+           $wpdb->insert( "newsletter", $data);
+                    $status = 'L\'email a été bien envoyé'; 
+                     // $status =  'L\'email est vide';             
                                 }                                 
-                                else if (!empty($count))
+                                else 
                                 {
                     $status = 'L\'email est déjà inscrit';                
                                 }                         
-                                else  
-                                {
-                 $data = array (
-                             $email => $_POST ['email'] 
-                              );
-                     //  Insertion dans ma table newsletter
-                   $wpdb->insert( "newsletter", $data);
-                   $status = 'L\'email a été bien envoyé'; 
-                 //   $status =  'L\'email est vide'; 
-                                }
+       
+                      
                                 
             echo $status;
          } 
