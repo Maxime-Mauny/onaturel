@@ -5,7 +5,9 @@
 }
 
 .carousel-item {
-  height: 530px;
+ 
+  height: auto;
+  width: 100%; 
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon { 
@@ -13,19 +15,20 @@
   width: 30px; 
   outline: black; 
   background-color: rgba(0, 0, 0, 0.3); 
-  background-size: 100%, 100%; 
+  //background-size: 100%, 100%; 
   border-radius: 50%; 
   border: 1px solid black; 
 } 
 
 @media (min-width: 900px) {
 .carousel-item {
-  height: 590px;
+  height: auto;
 }
 }
 
 @media (min-width: 1080px) {
   .carousel-item {
-    height: 730px;
+    height: auto;
+    
   }
   }

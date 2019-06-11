@@ -3,7 +3,7 @@
     
     .title-blog {
         text-align: center;
-        background-color: $gris-fonce;
+        background-color: $blanc;
         padding-bottom: 0.6em; 
         margin-bottom: -0.1em;
     
@@ -17,24 +17,36 @@
             color: $green;
             }
     }
-    
+ 
 
     .posts {
-        background-color: $gris-fonce;
+        background-color: $blanc;
         padding: 0 2em 1em 2em;
+        
+       
+       
 
         .post {
             margin-bottom: 1.5em;
-
-            img {
-                max-height: 190px; 
-                width: 100%;
+            height: auto; 
+            box-shadow: 0 0 0.8em lighten($black, 40%);
+            border-radius: 10px;
+            
+            img {              
+                max-height: 100%; 
+                width: 100%; 
+                border-radius: 10px 10px 0 0 ;
 
             }
 
             .text {
                 background-color: $blanc;
                 padding: 0.5em;
+                font-size: 1.5em;
+                height: 250px;
+                background-color: $white-clair ;
+                border-radius:  0 0 10px 10px;
+                 
 
                 h2 {
                     font-size: 0.9em;
@@ -81,32 +93,40 @@
 
     .post {
         width: 49%;
-        height: 330px;
+        height: auto;
 
         img {
-            height: 230px; 
+            height: auto; 
             width: 100%;
 
         }
+ 
     }
 }
 }
 @media (min-width: 1080px) {
     .posts {
-        display: flex;
+      //  display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        
+        
+       
     
         .post {
             width: 24%;
-            height: 450px;
-            font-size: 1.6em;
+            height: auto;
+            font-size: 1em;
+         //  padding: 0  0  0 0.2em;
+          
+             
 
             img {
-                height: 250px; 
+                height: auto; 
                 width: 100%;
     
             }
+ 
         }
 }
 .blog {

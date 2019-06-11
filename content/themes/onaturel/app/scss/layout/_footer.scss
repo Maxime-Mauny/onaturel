@@ -2,20 +2,20 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.7em;
-    background-color: $blanc;
+    background-color: $green-vert;
     padding: 0.5em;
-    height: 7em;
+    height: auto;
 
 
     .nav-contact {
         padding-top: 0.7em;
         ul {
             li {
-                line-height: 1.2em;
+                line-height: 1.9em;
 
                 a{
-                    font-size: 0.8em;
-                    color: $gris-fonce;
+                    font-size: 1.3em;
+                    color: $blanc;
                 }
                 a:hover{
                     color: $green;
@@ -48,15 +48,17 @@ footer {
     }
 
     .social-nav {
-        padding-top: 0.7em;
+        padding-top: 0.8em;
         display: flex;
-        flex-direction: column;
+        flex-wrap: flex wrap;
+        justify-content: space-between;
         margin-left: 6em;
+       
 
         i {
-            color: $gris-fonce;
+            color: $blanc;
             line-height: 1.1em;
-            font-size: 1.2em;
+            font-size: 2em;
         }
         i:hover{
             color: $green;
@@ -66,9 +68,9 @@ footer {
 
 @media (min-width: 1080px) {
     footer {       
-        font-size: 1.2em;
+        font-size: 1em;
         padding: 1em;
-        height: 8em;
+        height: auto;
         .logo-copyright {
             padding: 1.2em;
             img {
