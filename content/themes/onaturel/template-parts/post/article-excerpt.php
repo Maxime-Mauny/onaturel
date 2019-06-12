@@ -5,3 +5,4 @@
       <div><?php the_excerpt(); ?></div>
           <a href="<?php the_permalink(); ?>">Lire la suite</a> 
 </div>
+
