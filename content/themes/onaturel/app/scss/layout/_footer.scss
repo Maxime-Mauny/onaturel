@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.7em;
-    background-color: $green-vert;
+    background-color: $blanc;
     padding: 0.5em;
     height: auto;
 
@@ -15,7 +15,7 @@ footer {
 
                 a{
                     font-size: 1.3em;
-                    color: $blanc;
+                    color: $gris-fonce;
                 }
                 a:hover{
                     color: $green;
@@ -56,9 +56,9 @@ footer {
        
 
         i {
-            color: $blanc;
-            line-height: 1.1em;
-            font-size: 2em;
+            color: $gris-fonce;
+            line-height: 1em;
+            font-size: 1.5em;
         }
         i:hover{
             color: $green;
