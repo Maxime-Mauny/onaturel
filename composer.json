@@ -8,7 +8,8 @@
     "require": {
         "johnpbloch/wordpress": "^5.1",
         "wpackagist-theme/twentynineteen": "*",
-        "wpackagist-plugin/hello-dolly": "*"
+        "wpackagist-plugin/hello-dolly": "*",
+        "woocommerce/woocommerce": "^3.6"
     },
     "extra": {
         "wordpress-install-dir": "wp",
