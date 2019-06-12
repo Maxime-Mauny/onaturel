@@ -1,48 +1,32 @@
 import 'bootstrap';
 
 var app = {
-  init: function() {
+  init: function () {
     console.log('init');
 
-    $('.carousel-product').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 5,
+    bulmaCarousel.attach('#carousel-demo', {
       slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
+      slidesToShow: 6,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      pauseOnHover: true,
+      breakpoints: [
+        { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
+        { changePoint: 591, slidesToShow: 2, slidesToScroll: 1 },
+        { changePoint: 604, slidesToShow: 3, slidesToScroll: 1 },
+        { changePoint: 770, slidesToShow: 3, slidesToScroll: 1 },
+        { changePoint: 950, slidesToShow: 4, slidesToScroll: 1 }, 
+        { changePoint: 1024, slidesToShow: 4, slidesToScroll: 1 },       
       ]
     });
 
-  } 
-  
-  
+  }
+
+
+
 };
+
+
 
 $(app.init);

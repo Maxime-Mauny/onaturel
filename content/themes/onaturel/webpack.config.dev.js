@@ -91,6 +91,7 @@ let config = {
 
     ]
   },
+  
   // Configuration du serveur de développement qui rechargera automatiquement les contenus lors d'un changement
   devServer: {
     contentBase: path.join(__dirname, 'public'),
@@ -118,6 +119,7 @@ let config = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
+      'window.jQuery': 'jquery',
       Rellax: 'rellax'
     }),
     new CopyPlugin([

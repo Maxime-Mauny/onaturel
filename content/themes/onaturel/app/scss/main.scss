@@ -2,12 +2,16 @@
      'abstracts/variables';
 
 @import
+     'base/base';
+
+@import
      'page/home';
 
 @import
      '~reset-css/sass/reset', 
-     '~font-awesome/scss/font-awesome',
+     '~font-awesome/scss/font-awesome',        
      '~bootstrap/scss/bootstrap';
+        
 
 @import 
      'layout/blog',

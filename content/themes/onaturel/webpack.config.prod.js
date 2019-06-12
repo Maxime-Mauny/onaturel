@@ -59,7 +59,7 @@ let config = {
             publicPath: '../fonts' // J'informe à mon code CSS (dans css/style.css) que les polices de caractères seront dans le répertoire ../fonts
           }
         },
-      },
+      },      
                 // Images
     {
       test: /\.(jpg|jpeg|png|gif|svg)$/,
@@ -74,6 +74,7 @@ let config = {
     }
    ]
   },
+  
   plugins: [
     new MiniCSSExtractPlugin({
       filename: 'css/style.css'
@@ -81,6 +82,7 @@ let config = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
+      'window.jQuery': 'jquery',
       Rellax: 'rellax'
     }),
     new CopyPlugin([
