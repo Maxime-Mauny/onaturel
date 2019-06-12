@@ -1,7 +1,7 @@
 <div class="title-shop">
     <h1>o'Naturel</h1>
     <hr>
-    <p>Shopping</p>
+    <a href="#">Shopping</a>
   </div>
   <section class="categories">
     <div class="best-categories">

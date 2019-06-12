@@ -1,13 +1,15 @@
 .categories {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 0.1em 0 0.7em;
     
 
     .best-categories {
+        margin-bottom: 0.5em;
         img {            
             width: calc(50% - 10px); 
-            margin-bottom: 0.5em;     
+            margin-bottom: 1.3em;     
         }
     }
 
@@ -50,12 +52,15 @@
 @media (min-width: 770px) {
     .title-shop {
         display: none;
-    }    
+    } 
+    .categories {
+        padding-top: 1em;
+    }   
 }
 
 @media (min-width: 1080px) {
     .categories {
-        margin: 0 3em 3em 3em;
+        margin: 1em 3em 3em 3em;
 
         .best-categories {
             img {            

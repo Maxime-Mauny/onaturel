@@ -16,6 +16,9 @@
             font-weight: bold;
             color: $green;
             }
+            a:hover {
+                color: $green;
+                }
     }
     
 
@@ -41,7 +44,9 @@
                     font-weight: bold;
                 }
 
-                @media (min-width: 670px) {
+                p {
+                    font-size: 0.8em;
+                }
                     a {
                         color: $green;
                         font-weight: bold;
@@ -51,23 +56,7 @@
                     a:hover {
                         color: $green;
                     }
-                                
-                }
-                @media (max-width: 670px) {
-                    a {
-                        display: none;
-                    }
-                }
-            
-                p {
-                    font-size: 0.6em;
-                }
-
-                @media (min-width: 670px) {
-                    button {
-                        display: none;
-                    }
-                }
+                
             }
 
         }
@@ -81,7 +70,7 @@
 
     .post {
         width: 49%;
-        height: 330px;
+        height: 350px;
 
         img {
             height: 230px; 
@@ -100,10 +89,10 @@
         .post {
             width: 24%;
             height: 450px;
-            font-size: 1.6em;
+            font-size: 1em;
 
             img {
-                height: 250px; 
+                height: 280px; 
                 width: 100%;
     
             }
@@ -112,6 +101,7 @@
 .blog {
     
     .title-blog {
+        padding-bottom: 2em; 
     
         a {
             font-size: 2.1em;

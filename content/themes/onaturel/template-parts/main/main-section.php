@@ -1,7 +1,7 @@
 <section class="blog">
     <div class="title-blog">
       <hr>
-      <p>Blog</p>
+      <a href="#">Blog</a>
     </div>
 
  

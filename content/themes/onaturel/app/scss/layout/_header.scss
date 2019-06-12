@@ -7,7 +7,8 @@ header {
     width: 100%;
 
     .left {      
-        
+        display: flex;
+        flex-wrap: wrap;
         .logo {
             @media (max-width: 770px) {               
                 img {

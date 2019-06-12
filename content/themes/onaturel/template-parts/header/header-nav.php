@@ -1,6 +1,6 @@
 <section class="left">
           <div class="logo">
-            <a href="<?= home_url(); ?>"><img src="../images/icon/icon.png"alt="..."><span>Naturel</span></a> 
+            <a href="<?= home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/public/images/icon.png' ?>"alt="..."><span>Naturel</span></a> 
           </div>
           <div class="nav-header"> 
             <ul>     
