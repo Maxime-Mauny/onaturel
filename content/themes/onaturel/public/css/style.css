@@ -9410,40 +9410,53 @@ a.text-dark:hover, a.text-dark:focus {
 
 .blog .title-blog {
   text-align: center;
-  background-color: #495057;
+  background-color: #ffffff;
   padding-bottom: 0.6em;
   margin-bottom: -0.1em; }
   .blog .title-blog hr {
     width: 5.5em; }
-  .blog .title-blog a {
+  .blog .title-blog p {
     font-size: 1.3em;
     font-weight: bold;
     color: #22A557; }
-  .blog .title-blog a:hover {
-    color: #22A557; }
 
 .blog .posts {
-  background-color: #495057;
+  background-color: #ffffff;
   padding: 0 2em 1em 2em; }
   .blog .posts .post {
-    margin-bottom: 1.5em; }
+    margin-bottom: 1.5em;
+    height: auto;
+    box-shadow: 0 0 0.8em #666666;
+    border-radius: 10px; }
     .blog .posts .post img {
-      max-height: 190px;
-      width: 100%; }
+      max-height: 100%;
+      width: 100%;
+      border-radius: 10px 10px 0 0; }
     .blog .posts .post .text {
       background-color: #ffffff;
-      padding: 0.5em; }
+      padding: 0.5em;
+      font-size: 1.5em;
+      height: 250px;
+      background-color: #f5f9f6;
+      border-radius: 0 0 10px 10px; }
       .blog .posts .post .text h2 {
         font-size: 0.9em;
         font-weight: bold; }
+      @media (min-width: 670px) {
+        .blog .posts .post .text a {
+          color: #22A557;
+          font-weight: bold;
+          font-size: 0.7em; }
+        .blog .posts .post .text a:hover {
+          color: #22A557; } }
+      @media (max-width: 670px) {
+        .blog .posts .post .text a {
+          display: none; } }
       .blog .posts .post .text p {
-        font-size: 0.8em; }
-      .blog .posts .post .text a {
-        color: #22A557;
-        font-weight: bold;
-        font-size: 0.7em; }
-      .blog .posts .post .text a:hover {
-        color: #22A557; }
+        font-size: 0.6em; }
+      @media (min-width: 670px) {
+        .blog .posts .post .text button {
+          display: none; } }
 
 @media (min-width: 670px) {
   .posts {
@@ -9452,27 +9465,24 @@ a.text-dark:hover, a.text-dark:focus {
     justify-content: space-between; }
     .posts .post {
       width: 49%;
-      height: 350px; }
+      height: auto; }
       .posts .post img {
-        height: 230px;
+        height: auto;
         width: 100%; } }
 
 @media (min-width: 1080px) {
   .posts {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
     .posts .post {
       width: 24%;
-      height: 450px;
+      height: auto;
       font-size: 1em; }
       .posts .post img {
-        height: 280px;
+        height: auto;
         width: 100%; }
-  .blog .title-blog {
-    padding-bottom: 2em; }
-    .blog .title-blog a {
-      font-size: 2.1em; } }
+  .blog .title-blog p {
+    font-size: 2.1em; } }
 
 header {
   padding: 0.8em 0 0.1em 0.8em;
@@ -9736,7 +9746,7 @@ footer {
 .container-login {
   display: inline-block;
   width: 80%;
-  margin: 50px; }
+  margin: 100px; }
 
 .infos {
   background-image: url(/images/paiement/fond.jpeg);
@@ -9747,17 +9757,19 @@ footer {
   background-color: #a8a7a7;
   padding: 0 1.2em 0 1.2em; }
   .infos .info {
-    background-color: #ffffff;
+    background-color: #f5f9f6;
     margin: 1em 0.5em 0.5em 0.5em;
     padding: 0.5em 0.5em 0 0.5em;
     width: 44%;
     line-height: 0.8em;
-    text-align: center; }
+    text-align: center;
+    box-shadow: 0 0 0.8em #666666;
+    border-radius: 10px; }
     .infos .info i {
       color: #22A557;
       padding-bottom: 0.7em; }
     .infos .info p {
-      font-size: 0.6em;
+      font-size: 1em;
       text-transform: uppercase; }
     .infos .info .aside {
       font-size: 0.5em;
@@ -9769,7 +9781,7 @@ footer {
     padding: 3em 6em 3em 6em; }
     .infos .info {
       max-width: 22%;
-      margin: 0.3em 0.1em 0.3em 0.1em;
+      margin: 0.3em 1em 0.3em 0.1em;
       padding: 0.8em 0.8em 0.5em 0.8em; }
       .infos .info p {
         font-size: 0.9em; }
