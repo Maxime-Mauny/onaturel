@@ -47,6 +47,18 @@
     // store the id for later use
     var loopId = null;
 
+    // Test via a getter in the options object to see if the passive property is accessed
+    var supportsPassive = false;
+    try {
+      var opts = Object.defineProperty({}, 'passive', {
+        get: function() {
+          supportsPassive = true;
+        }
+      });
+      window.addEventListener("testPassive", null, opts);
+      window.removeEventListener("testPassive", null, opts);
+    } catch (e) {}
+
     // check what cancelAnimation method to use
     var clearLoop = window.cancelAnimationFrame || window.mozCancelAnimationFrame || clearTimeout;
 
@@ -275,14 +287,33 @@
       return result;
     };
 
+    // Remove event listeners and loop again
+    var deferredUpdate = function() {
+      window.removeEventListener('resize', deferredUpdate);
+      window.removeEventListener('orientationchange', deferredUpdate);
+      (self.options.wrapper ? self.options.wrapper : window).removeEventListener('scroll', deferredUpdate);
+      (self.options.wrapper ? self.options.wrapper : document).removeEventListener('touchmove', deferredUpdate);
+
+      // loop again
+      loopId = loop(update);
+    };
+
     // Loop
     var update = function() {
       if (setPosition() && pause === false) {
         animate();
-      }
 
-      // loop again
-      loopId = loop(update);
+        // loop again
+        loopId = loop(update);
+      } else {
+        loopId = null;
+
+        // Don't animate until we get a position updating event
+        window.addEventListener('resize', deferredUpdate);
+        window.addEventListener('orientationchange', deferredUpdate);
+        (self.options.wrapper ? self.options.wrapper : window).addEventListener('scroll', deferredUpdate, supportsPassive ? { passive: true } : false);
+        (self.options.wrapper ? self.options.wrapper : document).addEventListener('touchmove', deferredUpdate, supportsPassive ? { passive: true } : false);
+      }
     };
 
     // Transform3d on parallax element

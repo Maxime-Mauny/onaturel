@@ -6,6 +6,57 @@ img {
   max-width: 100%;
   width: auto; }
 
+.post-full {
+  padding: 3em;
+  margin: 0 auto;
+  width: 60%; }
+  .post-full .main-heading {
+    font-size: 4em;
+    font-weight: bold;
+    margin: .5em;
+    text-transform: uppercase; }
+  .post-full hr {
+    width: 25%;
+    height: .5em;
+    background-color: #22A557; }
+  .post-full .written-by {
+    font-size: .9em;
+    margin: 1.8em 0; }
+    .post-full .written-by a {
+      text-decoration: none;
+      font-weight: bold; }
+  .post-full .category-link {
+    margin: 0 1.5em; }
+  .post-full h1,
+  .post-full h2,
+  .post-full h3 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+    margin: .9em 0; }
+  .post-full img {
+    margin-bottom: 2.6em;
+    border-radius: 6px;
+    box-shadow: #666666 0px 0px 0.8em; }
+  .post-full .post-meta-details {
+    margin-bottom: 1.5em;
+    font-size: .9em; }
+    .post-full .post-meta-details .news-tag {
+      padding: .2em .5em; }
+  .post-full .post-content {
+    text-align: justify;
+    line-height: 1.6em; }
+
+@media (max-width: 1024px) {
+  .post-full {
+    width: 78%; }
+    .post-full .main-heading {
+      font-size: 1.4em; }
+    .post-full h1,
+    .post-full h2,
+    .post-full h3 {
+      font-size: 1.1em; } }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602
    License: none (public domain)
@@ -9415,7 +9466,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: -0.1em; }
   .blog .title-blog hr {
     width: 5.5em; }
-  .blog .title-blog p {
+  .blog .title-blog a {
     font-size: 1.3em;
     font-weight: bold;
     color: #22A557; }
