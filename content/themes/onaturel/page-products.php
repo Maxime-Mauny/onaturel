@@ -5,7 +5,9 @@ Template Name: Products Shop
 ?>
 
 
-<?php get_header(); ?>
+<?php
+ get_header(); // page pour la affiche de tous les produits
+?>
 <?php
         $args = [
             'post_type' => 'product',
