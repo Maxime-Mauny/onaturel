@@ -3,11 +3,11 @@
 <div id="carousel-demo" class="carousel-product text-center">
   <div class="item-1">
     <div class="small-carousel-thumbnail text-center">
-      <a href="#" class="product-thumbnail-link">
+      <a href="<?php the_permalink(); ?>" class="product-thumbnail-link">
         <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="thumbnail img-fluid">
       </a>
       <div class="pr-thumbnail-details">
-        <a href="#" class="cart-link">
+        <a href="<?php the_permalink(); ?>" class="cart-link">
           <img src="images/icon/icon.png" alt="" class="cart-icon">
         </a>
         <p><?php the_excerpt(); ?></p>
@@ -17,11 +17,11 @@
   </div>
   <div class="item-2">
     <div class="small-carousel-thumbnail text-center">
-      <a href="#" class="product-thumbnail-link">
+      <a href="<?php the_permalink(); ?>" class="product-thumbnail-link">
         <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="thumbnail img-fluid">
       </a>
       <div class="pr-thumbnail-details">
-        <a href="#" class="cart-link">
+        <a href="<?php the_permalink(); ?>" class="cart-link">
           <img src="images/icon/icon.png" alt="" class="cart-icon">
         </a>
         <p><?php the_excerpt(); ?></p>
@@ -31,7 +31,7 @@
   </div>
   <div class="item-3">
     <div class="small-carousel-thumbnail text-center">
-      <a href="#" class="product-thumbnail-link">
+      <a href="<?php the_permalink(); ?>" class="product-thumbnail-link">
         <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="thumbnail img-fluid">
       </a>
       <div class="pr-thumbnail-details">
@@ -45,7 +45,7 @@
   </div>
   <div class="item-4">
     <div class="small-carousel-thumbnail text-center">
-      <a href="#" class="product-thumbnail-link">
+      <a href="<?php the_permalink(); ?>" class="product-thumbnail-link">
         <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="thumbnail img-fluid">
       </a>
       <div class="pr-thumbnail-details">
@@ -59,7 +59,7 @@
   </div>
   <div class="item-5">
     <div class="small-carousel-thumbnail text-center">
-      <a href="#" class="product-thumbnail-link">
+      <a href="<?php the_permalink(); ?>" class="product-thumbnail-link">
         <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="thumbnail img-fluid">
       </a>
       <div class="pr-thumbnail-details">
