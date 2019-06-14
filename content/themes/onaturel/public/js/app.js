@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "319ad1316ab1f7d49e43";
+/******/ 	var hotCurrentHash = "6f91826b2c9574922845";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -805,26 +805,8 @@ var app = {
   init: function () {
     console.log('init');
 
-    bulmaCarousel.attach('#carousel-demo', {
-      slidesToScroll: 1,
-      slidesToShow: 6,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 2500,
-      pauseOnHover: true,
-      breakpoints: [
-        { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
-        { changePoint: 591, slidesToShow: 2, slidesToScroll: 1 },
-        { changePoint: 604, slidesToShow: 3, slidesToScroll: 1 },
-        { changePoint: 770, slidesToShow: 3, slidesToScroll: 1 },
-        { changePoint: 950, slidesToShow: 4, slidesToScroll: 1 }, 
-        { changePoint: 1024, slidesToShow: 4, slidesToScroll: 1 },       
-      ]
-    });
 
   }
-
-
 
 };
 

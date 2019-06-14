@@ -10,9 +10,9 @@
     .info {
         background-color: $white-clair;
         margin: 1em 0.5em 0.5em 0.5em; 
-        padding: 0.5em 0.5em 0 0.5em;
+        padding: 1.5em 0.5em 0 0.5em;
         width: 44%;
-        line-height: 0.8em;
+        line-height: 2em;
         text-align: center;
         box-shadow: 0 0 0.8em lighten($black, 40%);
         border-radius: 10px;
@@ -20,11 +20,12 @@
 
         i {
             color: $green;
-            padding-bottom: 0.7em;
+            padding: 0.8em;
         }
         p {
-            font-size: 1em;
+            font-size: 0.9em;
             text-transform: uppercase;
+             
         }
         .aside {
             font-size: 0.5em;

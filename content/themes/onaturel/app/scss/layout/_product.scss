@@ -1,7 +1,7 @@
 
-.blog {
-    
-    .title-blog {
+.product {
+ 
+    .title-product {
         text-align: center;
         background-color: $blanc;
         padding-bottom: 0.6em; 
@@ -19,33 +19,35 @@
     }
  
 
-    .posts {
+    .posts-product {
         background-color: $blanc;
-        padding: 0 2em 1em 2em;
-        
+        padding: 0 8em 8em 8em;
        
        
 
-        .post {
+        .post-product {
             margin-bottom: 1.5em;
             height: auto; 
             box-shadow: 0 0 0.8em lighten($black, 40%);
-            border-radius: 10px;
+           // border-radius: 10px;
+            
+
             
             img {              
                 max-height: 100%; 
                 width: 100%; 
-                border-radius: 10px 10px 0 0 ;
+               // border-radius: 10px 10px 0 0 ;
 
             }
 
             .text {
                 background-color: $blanc;
                 padding: 0.5em;
-                font-size: 1.5em;
+                font-size: 1.2em;
                 height: auto;
                 background-color: $white-clair ;
                 border-radius:  0 0 10px 10px;
+                text-align: center;
                  
 
                 h2 {
@@ -86,14 +88,15 @@
     }
 }
 @media (min-width: 670px) {
-.posts {
+.posts-product {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
-    .post {
-        width: 49%;
+    .post-product {
+        width: 30%;
         height: auto;
+        
 
         img {
             height: auto; 
@@ -105,7 +108,7 @@
 }
 }
 @media (min-width: 1080px) {
-    .posts {
+    .posts-product {
       //  display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -113,7 +116,7 @@
         
        
     
-        .post {
+        .post-product {
             width: 24%;
             height: auto;
             font-size: 1em;
@@ -129,9 +132,9 @@
  
         }
 }
-.blog {
+.product {
     
-    .title-blog {
+    .title-product {
     
         p {
             font-size: 2.1em;

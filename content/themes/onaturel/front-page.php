@@ -4,7 +4,12 @@
 <?php  get_template_part('template-parts/main/main', 'categories'); ?> 
 <?php  get_template_part('template-parts/main/main', 'subcategories'); ?> 
 
-<section class="blm-carousel">
+
+<section class="product">
+<div class="title-product">
+<hr>
+<a href="#">Produits</a>
+<section class="posts-product">
  
 <?php
     $args = [
@@ -23,7 +28,8 @@
      wp_reset_postdata();
 ?> 
  
-     
+ 
+ </section>
  </section>
  
  
