@@ -3,26 +3,16 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD:content/themes/onaturel/app/scss/component/_paiement.scss
     justify-content: space-between;
     background-color: rgb(168, 167, 167);
     padding: 0 1.2em 0 1.2em;
-=======
-    justify-content: center;
->>>>>>> 2c3eeca2044e8478867ec5b89cbf3f7d82981fa5:content/themes/onaturel/app/scss/component/_info.scss
     
     .info {
         background-color: $white-clair;
         margin: 1em 0.5em 0.5em 0.5em; 
-<<<<<<< HEAD:content/themes/onaturel/app/scss/component/_paiement.scss
         padding: 0.5em 0.5em 0 0.5em;
         width: 44%;
         line-height: 0.8em;
-=======
-        padding: 2.5em 0.5em 0 0.5em;
-        width: 250px;
-        line-height: 1.5em;
->>>>>>> 2c3eeca2044e8478867ec5b89cbf3f7d82981fa5:content/themes/onaturel/app/scss/component/_info.scss
         text-align: center;
         box-shadow: 0 0 0.8em lighten($black, 40%);
         border-radius: 10px;
@@ -48,12 +38,7 @@
 
 @media (min-width: 1080px) {
     .infos {
-<<<<<<< HEAD:content/themes/onaturel/app/scss/component/_paiement.scss
         padding: 3em 6em 3em 6em;
-=======
-        padding: 3em 9em 3em 9em;
-        
->>>>>>> 2c3eeca2044e8478867ec5b89cbf3f7d82981fa5:content/themes/onaturel/app/scss/component/_info.scss
         .info {    
             max-width: 22%;
             margin: 0.3em 1em 0.3em 0.1em; 

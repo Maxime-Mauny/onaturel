@@ -5,7 +5,7 @@
               <div class="carousel-caption d-none d-md-block">
                   <p class="h1 text-dark">Shopping</p>
                   <p class="h2 text-dark">Maison</p>
-                  <button type="button" class="btn btn-success font-weight-bold">Découvrir</button>
+                  <a href="#" class="btn btn-success font-weight-bold">Découvrir</a>
               </div>
             </div>
             <div class="carousel-item">
@@ -13,7 +13,7 @@
               <div class="carousel-caption d-none d-md-block">
                   <p class="h1 text-dark">Shopping</p>
                   <p class="h2 text-dark">Beautée/bien être</p>
-                  <button type="button" class="btn btn-success font-weight-bold">Découvrir</button>
+                  <a href="#" class="btn btn-success font-weight-bold">Découvrir</a>
               </div>
             </div>
             <div class="carousel-item">
@@ -21,7 +21,7 @@
               <div class="carousel-caption d-none d-md-block">
                   <p class="h1 text-dark">Shopping</p>
                   <p class="h2 text-dark">Puériculture</p>
-                  <button type="button" class="btn btn-success font-weight-bold">Découvrir</button>
+                  <a href="#" class="btn btn-success font-weight-bold">Découvrir</a>
               </div>
             </div>
           </div>
