@@ -3,6 +3,7 @@
 <?php  get_template_part('template-parts/main/main', 'carousel'); ?> 
 <?php  get_template_part('template-parts/main/main', 'categories'); ?> 
 <?php  get_template_part('template-parts/main/main', 'subcategories'); ?> 
+<<<<<<< HEAD
 
 <section class="blm-carousel">
 <div id="carousel-demo" class="carousel-product text-center">
@@ -28,6 +29,9 @@
  
  
 
+=======
+<?php  get_template_part('template-parts/main/main', 'produit'); ?> 
+>>>>>>> 806b6919b0a6cf9d78deb44e3b962d6e570a428b
 <?php  get_template_part('template-parts/main/main', 'section'); ?> 
 
 

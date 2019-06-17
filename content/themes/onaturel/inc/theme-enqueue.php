@@ -10,6 +10,8 @@ if (!function_exists('onaturel_scripts')):
             [],
             '1.0.2'
         );
+     
+
 
         wp_enqueue_script(
             'onaturel-js',
@@ -18,9 +20,13 @@ if (!function_exists('onaturel_scripts')):
             '1.0.0',
             true
         );
+
+     
     }
 
 endif;
 
 
 add_action('wp_enqueue_scripts', 'onaturel_scripts');
+
+ 

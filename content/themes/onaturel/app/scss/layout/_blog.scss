@@ -52,7 +52,11 @@
                     font-weight: bold;
                 }
 
+<<<<<<< HEAD
                 
+=======
+                @media (min-width: 670px) {
+>>>>>>> 806b6919b0a6cf9d78deb44e3b962d6e570a428b
                     a {
                         color: $green;
                         font-weight: bold;
@@ -63,8 +67,17 @@
                         color: $green;
                     }
                                 
+<<<<<<< HEAD
                 
                 
+=======
+                }
+                @media (max-width: 670px) {
+                    a {
+                        display: none;
+                    }
+                }
+>>>>>>> 806b6919b0a6cf9d78deb44e3b962d6e570a428b
             
                 p {
                     font-size: 0.6em;

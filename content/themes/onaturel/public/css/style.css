@@ -9465,7 +9465,11 @@ a.text-dark:hover, a.text-dark:focus {
 .blog .title-blog {
   text-align: center;
   background-color: #ffffff;
+<<<<<<< HEAD
   padding: 0.7em 0 0.6em 0;
+=======
+  padding-bottom: 0.6em;
+>>>>>>> 806b6919b0a6cf9d78deb44e3b962d6e570a428b
   margin-bottom: -0.1em; }
   .blog .title-blog hr {
     width: 5.5em; }
@@ -9491,16 +9495,33 @@ a.text-dark:hover, a.text-dark:focus {
       padding: 0.5em;
       font-size: 1.5em;
       height: 250px;
+<<<<<<< HEAD
+=======
+      background-color: #f5f9f6;
+>>>>>>> 806b6919b0a6cf9d78deb44e3b962d6e570a428b
       border-radius: 0 0 10px 10px; }
       .blog .posts .post .text h2 {
         font-size: 0.9em;
         font-weight: bold; }
+<<<<<<< HEAD
       .blog .posts .post .text a {
         color: #22A557;
         font-weight: bold;
         font-size: 0.7em; }
       .blog .posts .post .text a:hover {
         color: #22A557; }
+=======
+      @media (min-width: 670px) {
+        .blog .posts .post .text a {
+          color: #22A557;
+          font-weight: bold;
+          font-size: 0.7em; }
+        .blog .posts .post .text a:hover {
+          color: #22A557; } }
+      @media (max-width: 670px) {
+        .blog .posts .post .text a {
+          display: none; } }
+>>>>>>> 806b6919b0a6cf9d78deb44e3b962d6e570a428b
       .blog .posts .post .text p {
         font-size: 0.6em; }
       @media (min-width: 670px) {
