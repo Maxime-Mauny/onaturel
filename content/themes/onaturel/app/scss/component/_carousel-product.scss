@@ -10,7 +10,7 @@
         height: 30px; 
         width: 30px; 
         outline: black; 
-        background-color: rgba(0, 0, 0, 0.15); 
+        background-color: rgba(0, 0, 0, 0.13); 
         background-size: 100%, 100%; 
         border-radius: 50%; 
         border: 1px solid black; 
@@ -22,7 +22,8 @@
     
 
     .small-carousel-thumbnail {
-        width: 88%;               
+        width: 88%;  
+        height: 375px;             
         background-color: $blanc;
         padding: .8em 2em 2em 2em;
         margin: .5em 1.2em;
@@ -35,23 +36,22 @@
 
             .thumbnail {
                 margin-bottom: 1.3em;
-                max-width: 100%;
-                height: auto;                
+                max-width: 100%;                            
             }
         }
         
         .pr-thumbnail-details {
             color: $gris-fonce;
-            font-size: 1.1em;
+            font-size: .9em;
             font-weight: bold;
-            line-height: .8em;            
-            text-align: left;
-            padding-bottom: 0;
+            line-height: 1.2em;            
+            text-align: left;            
             
             .cart-icon {                
-                width: 2.2em;
-                height: 2.2em;
-                float: right;                
+                width: 3em;
+                height: 3em;
+                float: right; 
+                padding: .4em;               
                 
             }
             
@@ -66,25 +66,18 @@
 @media (max-width: 480px) {
     .small-carousel-thumbnail {        
         display: inline-block;
-        margin: 0 auto;        
-        width: 100%;
+        margin: 0 auto;           
+        padding-bottom: 0;
         text-align: center; 
-        overflow: hidden; 
+        overflow: hidden;         
         
         .thumbnail {
+            margin-top: 1.7em;
             width: 60%;
             height: 60%;
-        }       
+        }
+        
     }   
-
-    
-    /* Slider arrows
-    .slider-navigation-previous,
-    .slider-navigation-next {
-        display: none;
-    }*/
-    
-
     
 }
 
@@ -96,14 +89,9 @@
         
     }     
         .thumbnail {
+            margin-top: 1.7em;
             width: 70%;
-        }
-  
-    /* Slider arrows
-    .slider-navigation-previous,
-    .slider-navigation-next {
-        display: visible;
-    }*/
+        } 
     
 }
 
@@ -115,6 +103,7 @@
     }
 
     .thumbnail {
+        margin-top: 1.7em;
         width: 100%;
     }
 
@@ -127,6 +116,7 @@
         height: 100%;
 
         .thumbnail {
+            margin-top: 1.7em;
             width: 100%;
         }
        
@@ -142,6 +132,7 @@
         height: 100%;
 
         .thumbnail {
+            margin-top: 1.7em;
             width: 100%;
         }
        
@@ -157,6 +148,7 @@
         height: 100%;
 
         .thumbnail {
+            margin-top: 1.7em;
             width: 100%;
         }
        
