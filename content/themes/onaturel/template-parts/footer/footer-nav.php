@@ -19,14 +19,14 @@
       </ul>
     </div>
     <div class="logo-copyright">
-      <a href="#"><img src="<?php echo get_template_directory_uri() . '/public/images/icon.png' ?>"alt="..."><span>Naturel</span></a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/images/icon.png' ?>"alt="o'naturel"><span>Naturel</span></a>
       <p>Copyright &copy; o'Naturel-2019</p>
     </div>
     <div class="social-nav">
-      <a href="#"> </a><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#"> </a><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="#"> </a><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="#"> </a><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
     </div>
 
     

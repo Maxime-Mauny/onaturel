@@ -16,7 +16,7 @@
       <p>contactez-nous</p>
       <p>par mail ou par</p>
       <p>téléphone</p><br>
-      <p class="aside">Email: contact@onaturel.com</p>
+      <p class="aside">Email: info-onaturel@gmx.com</p>
     </div>
     <div class="info">
       <i class="fa fa-map" aria-hidden="true"></i>

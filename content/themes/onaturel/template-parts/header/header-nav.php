@@ -21,8 +21,8 @@
           </div>
         </section>
         <section class="user">
-          <i class="fa fa-search"></i>
-          <input type="text" id="usearch" name="search"placeholder="Rechercher">
-          <i class="fa fa-user-o" aria-hidden="true"></i>
-          <i class="fa fa-shopping-cart"aria-hidden="true"></i>
+       
+        
+        <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart"aria-hidden="true"></i></a>
 </section> 

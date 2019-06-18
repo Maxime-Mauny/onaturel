@@ -2,7 +2,8 @@
      'abstracts/variables';
 
 @import
-     'page/home';
+     'page/home',
+     'page/post-full';
 
 @import
      '~reset-css/sass/reset', 
@@ -19,4 +20,5 @@
      'component/carousel',
      'component/categories',
      'component/nav-bar',
-     'component/paiement';
+     'component/newsletter',
+     'component/info';

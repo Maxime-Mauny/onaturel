@@ -5,6 +5,7 @@ footer {
     background-color: $blanc;
     padding: 0.5em;
     height: 7em;
+    border-top: 1px solid $gris-fonce;
 
 
     .nav-contact {
@@ -32,9 +33,9 @@ footer {
             width: 30px;
         }
         span {
+            font-family: 'Oleo Script', cursive;
             color: $green;
             font-size: 1.3em;
-            font-weight: bold;
         }
         a:hover {
             text-decoration: none;
@@ -72,7 +73,7 @@ footer {
         .logo-copyright {
             padding: 1.2em;
             img {
-                padding-bottom: 0.9em;
+                padding-bottom: 1.4em;
                 margin-left: 2.2em;
                 width: 50px;
             }

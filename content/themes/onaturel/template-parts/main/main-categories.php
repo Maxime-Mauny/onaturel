@@ -1,6 +1,6 @@
 <div class="title-shop">
     <h1>o'Naturel</h1>
-    <hr>
+    
     <a href="#">Shopping</a>
   </div>
   <section class="categories">
