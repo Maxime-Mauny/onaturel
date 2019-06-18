@@ -1,3 +1,4 @@
+<?php echo do_shortcode ('[yith_woocommerce_ajax_search]');?>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner justify-content-center">
             <div class="carousel-item active">
@@ -34,3 +35,4 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+       

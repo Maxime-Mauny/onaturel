@@ -12,7 +12,7 @@ if (!function_exists('onaturel_setup')):
         register_nav_menus([
             'menu_header' => 'Menu de navigation en haut de la page',
             'menu_footer' => 'Menu de navigation en bas de la page',
-             
+            
         ]);
 
 
