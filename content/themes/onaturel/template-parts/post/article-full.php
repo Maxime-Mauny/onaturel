@@ -1,6 +1,6 @@
 <div class="post post-full">
   <h2 class="text-center main-heading"><?php the_title(); ?></h2>
-  <hr>
+  <!--<hr>-->
   <p class="text-muted text-center written-by">Ecrit par 
     <a href="#" class="text-muted"><?php the_author_link(); ?></a>
   </p>

@@ -10,15 +10,19 @@
         font-size: 4em;
         font-weight: bold;
         margin: .5em;
-        text-transform: uppercase;        
+        text-transform: uppercase;  
+        padding-bottom: .6em; 
+        border-bottom: .11em solid $green; 
+        //border-bottom-width: 10%;     
     }
 
-    hr {
+    // CORRECTION, LE HR NE FONCTIONNE PAS SUR WORDPRESS
+    /*hr {
         width: 25%;
         height: .5em;
         background-color: $green;
         
-    }
+    }*/
 
     .written-by {
 
