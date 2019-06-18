@@ -1,40 +1,41 @@
-
 .blog {
-    
     .title-blog {
         text-align: center;
         background-color: $blanc;
-        padding-bottom: 0.6em; 
-        margin-bottom: -0.1em;
-    
-        hr {
-            width: 5.5em;
-        }
-    
+        margin-top: 5.5em;
+      
         a {
             font-size: 1.3em;
             font-weight: bold;
-            color: $green;
+            color: $black;
+            border-top: solid 5px $green-new;
+            padding: 0.8em 1.5em;
             }
     }
  
 
     .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         background-color: $blanc;
-        padding: 0 2em 1em 2em;
+       // padding: 1.2em 1.2em  ;
+        width: 100%;
+        margin-top : 50px  ;
         
        
        
 
         .post {
             margin-bottom: 1.5em;
+            width: 280px;
             height: auto; 
             box-shadow: 0 0 0.8em lighten($black, 40%);
             border-radius: 10px;
             
             img {              
-                max-height: 100%; 
                 width: 100%; 
+                height: auto; 
                 border-radius: 10px 10px 0 0 ;
 
             }
@@ -44,7 +45,6 @@
                 padding: 0.5em;
                 font-size: 1.5em;
                 height: auto;
-                background-color: $white-clair ;
                 border-radius:  0 0 10px 10px;
                  
 
@@ -88,16 +88,17 @@
 @media (min-width: 670px) {
 .posts {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+   // flex-wrap: wrap;
+    //justify-content: space-evenly;
 
     .post {
-        width: 49%;
+        width: 100%;
         height: auto;
 
         img {
-            height: auto; 
             width: 100%;
+            height: auto; 
+       
 
         }
  
@@ -111,13 +112,15 @@
         justify-content: space-evenly;
         
         
+        
        
     
         .post {
-            width: 24%;
+            width: 150px;
             height: auto;
             font-size: 1em;
-         //  padding: 0  0  0 0.2em;
+          //  padding: 0  0  0 0.2em;
+         
           
              
 

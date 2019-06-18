@@ -21,6 +21,23 @@
     }
 }
 
+.icon-nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: $white-clair;
+   // margin: 0 3.2em  ;   
+    padding: 0.5em   ;
+    align-items: center;
+    left: 50px;
+     i{
+         padding: 0 0.3em;
+     }
+
+} 
+ 
+
 @media (min-width: 770px) {
     .sub-categories {
         margin-top: 0.5em;
@@ -44,6 +61,15 @@
             }
         }
 }
+.icon-nav{
+ 
+    left: 130px;
+ 
+     
+
+} 
+ 
+ 
 }
 @media (min-width: 1080px) {
     .sub-categories {
@@ -68,4 +94,11 @@
             }
         }
 }
+.icon-nav{
+ 
+    left: 550px;
+ 
+     
+
+} 
 }

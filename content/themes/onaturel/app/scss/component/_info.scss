@@ -1,3 +1,88 @@
+/*
+.infos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+  //  height: 400px;
+    align-items: center;
+    background-color: $white-clair;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 120px;
+     
+    .info {
+ 
+        background-color: $white-clair;
+        //margin: 5em  0.5em  -10em 0.5em; 
+        padding: 1em 0.5em 0 0.5em;
+        width: 180px;
+        line-height: 0.8em;
+        text-align: center;
+        box-shadow: 0 0 0.8em lighten($black, 40%);
+        border-radius: 10px;
+        height: 180px;
+      
+
+        
+        
+
+        i {
+            color: $green;
+            padding: 0.8em;
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 0.7em;
+            font-weight: 700;
+            text-transform: uppercase;
+            
+             
+        }
+        .aside {
+            font-size: 0.5em;
+            color: rgb(110, 109, 109);
+            line-height: 1.1em;
+ 
+ 
+       
+        }
+
+        .mail{
+            position: relative;
+            top: 3.5em;
+        }
+    }
+}
+ 
+/*
+@media (max-width: 770px) {
+        .info{
+            margin: 10em ;
+        }
+
+}
+
+@media (min-width: 1080px) {
+    .infos {
+        padding: 1em 6em 3em 6em;
+        .info {    
+           margin: 20em 1em 0.3em 0.1em; 
+           // padding: 0.8em 0.8em 0.5em 0.8em;
+
+            p {
+                font-size: 0.7em;
+            }
+            .aside {
+                font-size: 0.5em;
+            }
+        }
+    }
+}
+*/ 
 .infos {
     background-image: url(/images/paiement/fond.jpeg);
     width: 100%;
@@ -10,9 +95,9 @@
     .info {
         background-color: $white-clair;
         margin: 1em 0.5em 0.5em 0.5em; 
-        padding: 1.5em 0.5em 0 0.5em;
+        padding: 0.5em 0.5em 0 0.5em;
         width: 44%;
-        line-height: 2em;
+        line-height: 0.8em;
         text-align: center;
         box-shadow: 0 0 0.8em lighten($black, 40%);
         border-radius: 10px;
@@ -20,12 +105,11 @@
 
         i {
             color: $green;
-            padding: 0.8em;
+            padding-bottom: 0.7em;
         }
         p {
-            font-size: 0.9em;
+            font-size: 1em;
             text-transform: uppercase;
-             
         }
         .aside {
             font-size: 0.5em;

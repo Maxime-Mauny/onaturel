@@ -1,6 +1,6 @@
 
 .product {
- 
+  
     .title-product {
         text-align: center;
         background-color: $blanc;
@@ -20,23 +20,31 @@
  
 
     .posts-product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         background-color: $blanc;
-        padding: 0 8em 8em 8em;
+        padding: 0 0em 0em 0em;
+        margin-top: 50px;
+        
        
        
 
         .post-product {
+            
             margin-bottom: 1.5em;
+            width: 200px;
             height: auto; 
             box-shadow: 0 0 0.8em lighten($black, 40%);
-           // border-radius: 10px;
+          
+            
+           
             
 
             
             img {              
-                max-height: 100%; 
                 width: 100%; 
-               // border-radius: 10px 10px 0 0 ;
+                height: auto;
 
             }
 
@@ -45,8 +53,8 @@
                 padding: 0.5em;
                 font-size: 1.2em;
                 height: auto;
-                background-color: $white-clair ;
-                border-radius:  0 0 10px 10px;
+            //    background-color: $white-clair ;
+              //  border-radius:  0 0 10px 10px;
                 text-align: center;
                  
 
@@ -94,13 +102,14 @@
     justify-content: space-evenly;
 
     .post-product {
-        width: 30%;
+        width: 40%;
         height: auto;
         
 
         img {
-            height: auto; 
             width: 100%;
+            height: auto; 
+           
 
         }
  
@@ -109,10 +118,10 @@
 }
 @media (min-width: 1080px) {
     .posts-product {
-      //  display: flex;
+       display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        
+   
         
        
     
@@ -120,8 +129,7 @@
             width: 24%;
             height: auto;
             font-size: 1em;
-         //  padding: 0  0  0 0.2em;
-          
+ 
              
 
             img {

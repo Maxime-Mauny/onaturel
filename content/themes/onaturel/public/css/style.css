@@ -6,6 +6,57 @@ img {
   max-width: 100%;
   width: auto; }
 
+.post-full {
+  padding: 3em;
+  margin: 0 auto;
+  width: 60%; }
+  .post-full .main-heading {
+    font-size: 4em;
+    font-weight: bold;
+    margin: .5em;
+    text-transform: uppercase; }
+  .post-full hr {
+    width: 25%;
+    height: .5em;
+    background-color: #22A557; }
+  .post-full .written-by {
+    font-size: .9em;
+    margin: 1.8em 0; }
+    .post-full .written-by a {
+      text-decoration: none;
+      font-weight: bold; }
+  .post-full .category-link {
+    margin: 0 1.5em; }
+  .post-full h1,
+  .post-full h2,
+  .post-full h3 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+    margin: .9em 0; }
+  .post-full img {
+    margin-bottom: 2.6em;
+    border-radius: 6px;
+    box-shadow: #666666 0px 0px 0.8em; }
+  .post-full .post-meta-details {
+    margin-bottom: 1.5em;
+    font-size: .9em; }
+    .post-full .post-meta-details .news-tag {
+      padding: .2em .5em; }
+  .post-full .post-content {
+    text-align: justify;
+    line-height: 1.6em; }
+
+@media (max-width: 1024px) {
+  .post-full {
+    width: 78%; }
+    .post-full .main-heading {
+      font-size: 1.4em; }
+    .post-full h1,
+    .post-full h2,
+    .post-full h3 {
+      font-size: 1.1em; } }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602
    License: none (public domain)
@@ -9411,33 +9462,36 @@ a.text-dark:hover, a.text-dark:focus {
 .blog .title-blog {
   text-align: center;
   background-color: #ffffff;
-  padding-bottom: 0.6em;
-  margin-bottom: -0.1em; }
-  .blog .title-blog hr {
-    width: 5.5em; }
+  margin-top: 5.5em; }
   .blog .title-blog a {
     font-size: 1.3em;
     font-weight: bold;
-    color: #22A557; }
+    color: #000;
+    border-top: solid 5px RGB(34, 165, 87);
+    padding: 0.8em 1.5em; }
 
 .blog .posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #ffffff;
-  padding: 0 2em 1em 2em; }
+  width: 100%;
+  margin-top: 50px; }
   .blog .posts .post {
     margin-bottom: 1.5em;
+    width: 280px;
     height: auto;
     box-shadow: 0 0 0.8em #666666;
     border-radius: 10px; }
     .blog .posts .post img {
-      max-height: 100%;
       width: 100%;
+      height: auto;
       border-radius: 10px 10px 0 0; }
     .blog .posts .post .text {
       background-color: #ffffff;
       padding: 0.5em;
       font-size: 1.5em;
       height: auto;
-      background-color: #f5f9f6;
       border-radius: 0 0 10px 10px; }
       .blog .posts .post .text h2 {
         font-size: 0.9em;
@@ -9460,22 +9514,20 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 670px) {
   .posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    display: flex; }
     .posts .post {
-      width: 49%;
+      width: 100%;
       height: auto; }
       .posts .post img {
-        height: auto;
-        width: 100%; } }
+        width: 100%;
+        height: auto; } }
 
 @media (min-width: 1080px) {
   .posts {
     flex-wrap: wrap;
     justify-content: space-evenly; }
     .posts .post {
-      width: 24%;
+      width: 150px;
       height: auto;
       font-size: 1em; }
       .posts .post img {
@@ -9497,22 +9549,25 @@ a.text-dark:hover, a.text-dark:focus {
     color: #22A557; }
 
 .product .posts-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #ffffff;
-  padding: 0 8em 8em 8em; }
+  padding: 0 0em 0em 0em;
+  margin-top: 50px; }
   .product .posts-product .post-product {
     margin-bottom: 1.5em;
+    width: 200px;
     height: auto;
     box-shadow: 0 0 0.8em #666666; }
     .product .posts-product .post-product img {
-      max-height: 100%;
-      width: 100%; }
+      width: 100%;
+      height: auto; }
     .product .posts-product .post-product .text {
       background-color: #ffffff;
       padding: 0.5em;
       font-size: 1.2em;
       height: auto;
-      background-color: #f5f9f6;
-      border-radius: 0 0 10px 10px;
       text-align: center; }
       .product .posts-product .post-product .text h2 {
         font-size: 0.9em;
@@ -9539,14 +9594,15 @@ a.text-dark:hover, a.text-dark:focus {
     flex-wrap: wrap;
     justify-content: space-evenly; }
     .posts-product .post-product {
-      width: 30%;
+      width: 40%;
       height: auto; }
       .posts-product .post-product img {
-        height: auto;
-        width: 100%; } }
+        width: 100%;
+        height: auto; } }
 
 @media (min-width: 1080px) {
   .posts-product {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
     .posts-product .post-product {
@@ -9560,14 +9616,54 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 2.1em; } }
 
 header {
-  padding: 0.8em 0 0.1em 0.8em;
   display: flex;
-  flex-wrap: wrap;
   background-color: #495057;
-  width: 100%; }
+  width: 100%;
+  /*
+    .user {
+        position: absolute;
+        right: 0px;
+        margin: 1em 0.5em 0 1.5em;;
+        
+        input {
+            font-size: 0.7em;
+            width: 7em;
+            height: 1.7em;
+            padding-left: 0.3em;
+        }
+         i {
+             font-size: 1.2em;
+             color: $blanc;
+             padding: 0 0.2em 0 0.2em;
+         }
+        i:hover{
+            color: $green;
+            text-decoration: none;
+        }
+    }
+    
+*/
+  /*
+    @media (min-width: 900px) {
+    .user {
+        
+        input {
+            font-size: 0.9em;
+            width: 8em;
+            height: 1.9em;
+            padding-left: 0.4em;
+        }
+         i {
+             font-size: 1.5em;
+             color: $blanc;
+             padding: 0 0.3em 0 0.3em;
+         }
+    }
+}
+*/ }
   header .left {
     display: flex;
-    flex-wrap: wrap; }
+    flex-direction: row; }
     @media (max-width: 770px) {
       header .left .logo img {
         width: 50px;
@@ -9589,6 +9685,9 @@ header {
     header .left .nav-header {
       line-height: 1.2em;
       padding-top: 0.2em; }
+      header .left .nav-header ul {
+        display: flex;
+        flex-direction: row; }
       header .left .nav-header a {
         color: #ffffff;
         font-size: 0.8em;
@@ -9612,32 +9711,6 @@ header {
         header .left .nav-header ul li a:hover {
           color: #22A557;
           text-decoration: none; } }
-  header .user {
-    position: absolute;
-    right: 0px;
-    margin: 1em 0.5em 0 1.5em; }
-    header .user input {
-      font-size: 0.7em;
-      width: 7em;
-      height: 1.7em;
-      padding-left: 0.3em; }
-    header .user i {
-      font-size: 1.2em;
-      color: #ffffff;
-      padding: 0 0.2em 0 0.2em; }
-    header .user i:hover {
-      color: #22A557;
-      text-decoration: none; }
-  @media (min-width: 900px) {
-    header .user input {
-      font-size: 0.9em;
-      width: 8em;
-      height: 1.9em;
-      padding-left: 0.4em; }
-    header .user i {
-      font-size: 1.5em;
-      color: #ffffff;
-      padding: 0 0.3em 0 0.3em; } }
 
 footer {
   display: flex;
@@ -9645,7 +9718,8 @@ footer {
   font-size: 0.7em;
   background-color: #ffffff;
   padding: 0.5em;
-  height: 7em; }
+  height: 7em;
+  margin-top: 50px; }
   footer .nav-contact {
     padding-top: 0.7em; }
     footer .nav-contact ul li {
@@ -9884,6 +9958,18 @@ footer {
         color: #22A557;
         text-decoration: none; }
 
+.icon-nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #f5f9f6;
+  padding: 0.5em;
+  align-items: center;
+  left: 50px; }
+  .icon-nav i {
+    padding: 0 0.3em; }
+
 @media (min-width: 770px) {
   .sub-categories {
     margin-top: 0.5em;
@@ -9899,7 +9985,9 @@ footer {
           color: #495057; }
         .sub-categories ul li a:hover {
           color: #22A557;
-          text-decoration: none; } }
+          text-decoration: none; }
+  .icon-nav {
+    left: 130px; } }
 
 @media (min-width: 1080px) {
   .sub-categories {
@@ -9916,13 +10004,100 @@ footer {
           color: #495057; }
         .sub-categories ul li a:hover {
           color: #22A557;
-          text-decoration: none; } }
+          text-decoration: none; }
+  .icon-nav {
+    left: 550px; } }
 
 .container-login {
   display: inline-block;
   width: 80%;
   margin: 100px; }
 
+/*
+.infos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+  //  height: 400px;
+    align-items: center;
+    background-color: $white-clair;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 120px;
+     
+    .info {
+ 
+        background-color: $white-clair;
+        //margin: 5em  0.5em  -10em 0.5em; 
+        padding: 1em 0.5em 0 0.5em;
+        width: 180px;
+        line-height: 0.8em;
+        text-align: center;
+        box-shadow: 0 0 0.8em lighten($black, 40%);
+        border-radius: 10px;
+        height: 180px;
+      
+
+        
+        
+
+        i {
+            color: $green;
+            padding: 0.8em;
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 0.7em;
+            font-weight: 700;
+            text-transform: uppercase;
+            
+             
+        }
+        .aside {
+            font-size: 0.5em;
+            color: rgb(110, 109, 109);
+            line-height: 1.1em;
+ 
+ 
+       
+        }
+
+        .mail{
+            position: relative;
+            top: 3.5em;
+        }
+    }
+}
+ 
+/*
+@media (max-width: 770px) {
+        .info{
+            margin: 10em ;
+        }
+
+}
+
+@media (min-width: 1080px) {
+    .infos {
+        padding: 1em 6em 3em 6em;
+        .info {    
+           margin: 20em 1em 0.3em 0.1em; 
+           // padding: 0.8em 0.8em 0.5em 0.8em;
+
+            p {
+                font-size: 0.7em;
+            }
+            .aside {
+                font-size: 0.5em;
+            }
+        }
+    }
+}
+*/
 .infos {
   background-image: url(/images/paiement/fond.jpeg);
   width: 100%;
@@ -9934,17 +10109,17 @@ footer {
   .infos .info {
     background-color: #f5f9f6;
     margin: 1em 0.5em 0.5em 0.5em;
-    padding: 1.5em 0.5em 0 0.5em;
+    padding: 0.5em 0.5em 0 0.5em;
     width: 44%;
-    line-height: 2em;
+    line-height: 0.8em;
     text-align: center;
     box-shadow: 0 0 0.8em #666666;
     border-radius: 10px; }
     .infos .info i {
       color: #22A557;
-      padding: 0.8em; }
+      padding-bottom: 0.7em; }
     .infos .info p {
-      font-size: 0.9em;
+      font-size: 1em;
       text-transform: uppercase; }
     .infos .info .aside {
       font-size: 0.5em;

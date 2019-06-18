@@ -4,41 +4,40 @@
             <label >Newsletter</label>
                <i class="fa fa-envelope-o" aria-hidden="true"></i>              
                  <input type="email" name ="email"  placeholder="Entrez Votre e-mail">
-        <button type="submit" name="submit"  >Ok</button>
+        <button type="submit" name="submit">Ok</button>
     </form>
-</div>
-
+ 
 <?php   
         /* Newsletter */
+if($_POST){
 
-
-if( isset($_POST['submit'] )){
-    $email = $_POST ['email'];
+$email = isset($_POST['email'] ) ? $_POST['email'] : "";
     global $wpdb;
     // on localise notre table 
         $wpdb->get_results("SELECT * FROM newsletter where  email = '$email' ");
         // on va parcourir notre table pour verifier si l'email existe
             $count = $wpdb->num_rows;
- 
-            // S'il n'existe pas alors il va inserer l'information
-                if(empty($count))
-                             {
-                           $data = array (
-                           'email' => $_POST ['email'] 
-                              );
-            // Insertion dans ma table newsletter
-           $wpdb->insert( "newsletter", $data);
-                    $status = 'L\'email a été bien envoyé'; 
-                     // $status =  'L\'email est vide';             
-                                }                                 
-                                else 
-                                {
-                    $status = 'L\'email est déjà inscrit';                
-                                }                         
-       
-                      
-                                
-            echo $status;
-         } 
 
+if(empty($_POST)){ 
+                 echo "<div>l'email est vide</div>";             
+            }  
+            else  if(($count>0)){
+                echo "<div style:green>l'email est déja activé</div>";               
+            }
+            else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                 echo "<div>cette adresse email n'est pas valide.</div>";
+            }   
+            else  
+            {   
+            $data = array (
+            'email' => $_POST ['email']
+            );    
+            $wpdb->insert( "newsletter", $data);
+                  echo "<div>l'email a été bien envoyé</div>";
+ 
+    }
+
+}  
+    
 ?>
+</div>

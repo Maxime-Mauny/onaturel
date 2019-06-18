@@ -22,13 +22,20 @@ function onaturel_customize_register($wp_customize) {
     ]);
 
      
-      //Main Carousel
+      //Main Info
     
-      $wp_customize->add_section('onaturel_main_carousel', [
-        'title' => 'Images du Carousel',
+      $wp_customize->add_section('onaturel_main_info', [
+        'title' => 'Images du fond info',
         'panel' => 'onaturel_theme_panel'
     ]);
  
+
+        //Main Carousel
+    $wp_customize->add_section('onaturel_main_carousel', [
+      'title' => 'Images du Carousel',
+      'panel' => 'onaturel_theme_panel'
+  ]);
+
 
    onaturel_main($wp_customize);
  

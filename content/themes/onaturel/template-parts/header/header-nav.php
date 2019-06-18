@@ -19,10 +19,24 @@
 
             </ul>          
           </div>
-        </section>
-        <section class="user">
-          <i class="fa fa-search"></i>
-          <input type="text" id="usearch" name="search"placeholder="Rechercher">
-          <i class="fa fa-user-o" aria-hidden="true"></i>
-          <i class="fa fa-shopping-cart"aria-hidden="true"></i>
+</section>  
+        <section class="icon-nav">        
+        <div> 
+       <?php echo do_shortcode ('[yith_woocommerce_ajax_search]');?>
+       </div>
+       <i class="fa fa-user-o" aria-hidden="true"> </i>
+  <?php
+            $menu = wp_nav_menu([
+              'menu' => 'nav-icone',
+              'theme_location' => 'nav-icone',
+              'container' => 'i',
+              'container_class' => 'icon-nav',
+              'echo' => true
+            ]);
+            $menu = strip_tags($menu, '<i></i>');
+
+            echo $menu;
+   ?>
+    
+        
 </section> 

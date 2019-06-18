@@ -4,44 +4,41 @@
 <?php  get_template_part('template-parts/main/main', 'categories'); ?> 
 <?php  get_template_part('template-parts/main/main', 'subcategories'); ?> 
 
+<section class="blm-carousel">
 
-<section class="product">
-<div class="title-product">
-<hr>
-<a href="#">Produits</a>
-<section class="posts-product">
- 
+<!-- Start Carousel -->
+<div id="carousel-demo" class="carousel-product text-center">
 <?php
-    $args = [
-    'post_type' => 'product',
-            ];
-     $wp_query = new WP_Query($args);
-     if ($wp_query->have_posts()): while ($wp_query->have_posts()): $wp_query->the_post();
+        $args = [
+            'orderby' => 'ASC',
+            'post_type' => 'product',
+                ];
+
+        $wp_query = new WP_Query($args);
+
+            if ($wp_query->have_posts()): while ($wp_query->have_posts()): $wp_query->the_post();
 ?>
 
- 
-<?php  get_template_part('template-parts/post/product', 'excerpt'); ?> 
- 
- 
+            <?php  get_template_part('template-parts/main/main', 'produit'); ?> 
+
+
 <?php
-     endwhile; endif;
-     wp_reset_postdata();
-?> 
- 
- 
- </section>
- </section>
- 
- 
+    endwhile; endif;
+    wp_reset_postdata();
+?>    
+
+
+</div>
+<!-- End Carousel -->
+</section>
+
 
 <?php  get_template_part('template-parts/main/main', 'section'); ?> 
-
-
-
 <section class="posts">
 <?php
         $args = [
             'orderby' => 'ASC',
+            'posts_per_page' => 4
                 ];
 
         $wp_query = new WP_Query($args);

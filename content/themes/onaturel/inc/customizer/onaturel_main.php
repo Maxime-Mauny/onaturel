@@ -18,7 +18,9 @@ function onaturel_main($wp_customize){
         $wp_customize->add_setting('onaturel_carousel_3', []);    
 
 
+                    /* Images du Fond info */
 
+        $wp_customize->add_setting('onaturel_main_bck', []);   
 
 
 
@@ -90,7 +92,7 @@ function onaturel_main($wp_customize){
             [
                 'label'    => 'Upload image',
                 'section'  => 'onaturel_main_carousel',
-                'settings' => 'onaturel_carousel',
+                'settings' => 'onaturel_main_bck',
             ]
          );
 
@@ -116,7 +118,17 @@ function onaturel_main($wp_customize){
          );
 
 
+             /* Images du Info */
 
+         $image_info = new WP_Customize_Image_Control(
+            $wp_customize,
+            'info',    
+            [
+                'label'    => 'Upload image',
+                'section'  => 'onaturel_main_info',
+                'settings' => 'onaturel_main_bck',
+            ]
+         );
 
 
 
@@ -137,6 +149,8 @@ function onaturel_main($wp_customize){
     $wp_customize->add_control($carousel_2);
     $wp_customize->add_control($carousel_3);
 
+            /* Images du Info*/
+    $wp_customize->add_control($image_info);
 
 
 
