@@ -19,24 +19,25 @@
 
             </ul>          
           </div>
-</section>  
-        <section class="icon-nav">        
-        <div> 
-       <?php echo do_shortcode ('[yith_woocommerce_ajax_search]');?>
-       </div>
-       <i class="fa fa-user-o" aria-hidden="true"> </i>
+</section> 
+ 
+        <section class="icon-nav">  
+       
+        <ul>  
+       <li> <?php //echo do_shortcode ('[yith_woocommerce_ajax_search]');?></li>
   <?php
             $menu = wp_nav_menu([
               'menu' => 'nav-icone',
               'theme_location' => 'nav-icone',
-              'container' => 'i',
+              'container' => 'a',
               'container_class' => 'icon-nav',
               'echo' => true
             ]);
-            $menu = strip_tags($menu, '<i></i>');
+            $menu = strip_tags($menu, '<li></li>');
 
             echo $menu;
-   ?>
-    
-        
+   ?>   
+      </ul>             
+      
+               
 </section> 

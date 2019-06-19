@@ -1,14 +1,15 @@
+
 .blog {
     .title-blog {
         text-align: center;
         background-color: $blanc;
         margin-top: 5.5em;
-      
+
         a {
             font-size: 1.3em;
             font-weight: bold;
             color: $black;
-            border-top: solid 5px $green-new;
+            border-top: solid 5px $green;
             padding: 0.8em 1.5em;
             }
     }
@@ -52,8 +53,7 @@
                     font-size: 0.9em;
                     font-weight: bold;
                 }
-
-                @media (min-width: 670px) {
+ 
                     a {
                         color: $green;
                         font-weight: bold;
@@ -63,13 +63,8 @@
                     a:hover {
                         color: $green;
                     }
-                                
-                }
-                @media (max-width: 670px) {
-                    a {
-                        display: none;
-                    }
-                }
+             
+ 
             
                 p {
                     font-size: 0.6em;

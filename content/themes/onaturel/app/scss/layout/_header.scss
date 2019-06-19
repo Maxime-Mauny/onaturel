@@ -1,34 +1,32 @@
-
-
 header {
-  //  padding: 0.8em 0 0.1em 0.8em;
+    padding: 0.8em 0 0.1em 0.8em;
     display: flex;
-   // flex-wrap: wrap;
+    flex-wrap: wrap;
     background-color: $gris-fonce;
     width: 100%;
 
     .left {      
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         .logo {
             @media (max-width: 770px) {               
                 img {
                     width: 50px;
-                    padding-top: 0.6em;
+                    padding-bottom: 0.1em;
                 }      
             }
 
             @media (min-width: 770px) {               
                 img {
-                    padding-bottom: 1em;
+                    padding-bottom: 1.6em;
                     width: 50px;
                 }      
             }
         
             span {
+                font-family: 'Oleo Script', cursive;
                 color: $green;
                 font-size: 2.2em;
-                font-weight: bold;
                 margin: 0 0.5em 0 0.1em;
             }
             a:hover {
@@ -42,15 +40,9 @@ header {
             }
         }
 
-
         .nav-header {
             line-height: 1.2em;
             padding-top: 0.2em;
-            ul{
-                display: flex;
-                flex-direction: row;
-                
-            }
                         
             a {
                 color: $blanc;
@@ -66,7 +58,6 @@ header {
             }
         }
 
- 
     @media (min-width: 770px) {
         .nav-header {
                    
@@ -114,9 +105,7 @@ header {
             text-decoration: none;
         }
     }
-    
-*/
- /*
+
     @media (min-width: 900px) {
     .user {
         
@@ -132,7 +121,5 @@ header {
              padding: 0 0.3em 0 0.3em;
          }
     }
+}*/
 }
-*/
-}
- 

@@ -1,4 +1,3 @@
-import 'bootstrap';
 
 var app = {
   init: function () {

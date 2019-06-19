@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Chewy&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Leckerli+One&display=swap);
 @charset "UTF-8";
 * {
   box-sizing: border-box; }
@@ -17,7 +20,7 @@ img {
     text-transform: uppercase; }
   .post-full hr {
     width: 25%;
-    height: .5em;
+    height: 0.5em;
     background-color: #22A557; }
   .post-full .written-by {
     font-size: .9em;
@@ -9467,7 +9470,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1.3em;
     font-weight: bold;
     color: #000;
-    border-top: solid 5px RGB(34, 165, 87);
+    border-top: solid 5px #22A557;
     padding: 0.8em 1.5em; }
 
 .blog .posts {
@@ -9496,16 +9499,12 @@ a.text-dark:hover, a.text-dark:focus {
       .blog .posts .post .text h2 {
         font-size: 0.9em;
         font-weight: bold; }
-      @media (min-width: 670px) {
-        .blog .posts .post .text a {
-          color: #22A557;
-          font-weight: bold;
-          font-size: 0.7em; }
-        .blog .posts .post .text a:hover {
-          color: #22A557; } }
-      @media (max-width: 670px) {
-        .blog .posts .post .text a {
-          display: none; } }
+      .blog .posts .post .text a {
+        color: #22A557;
+        font-weight: bold;
+        font-size: 0.7em; }
+      .blog .posts .post .text a:hover {
+        color: #22A557; }
       .blog .posts .post .text p {
         font-size: 0.6em; }
       @media (min-width: 670px) {
@@ -9616,7 +9615,9 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 2.1em; } }
 
 header {
+  padding: 0.8em 0 0.1em 0.8em;
   display: flex;
+  flex-wrap: wrap;
   background-color: #495057;
   width: 100%;
   /*
@@ -9641,9 +9642,7 @@ header {
             text-decoration: none;
         }
     }
-    
-*/
-  /*
+
     @media (min-width: 900px) {
     .user {
         
@@ -9659,23 +9658,22 @@ header {
              padding: 0 0.3em 0 0.3em;
          }
     }
-}
-*/ }
+}*/ }
   header .left {
     display: flex;
-    flex-direction: row; }
+    flex-wrap: wrap; }
     @media (max-width: 770px) {
       header .left .logo img {
         width: 50px;
-        padding-top: 0.6em; } }
+        padding-bottom: 0.1em; } }
     @media (min-width: 770px) {
       header .left .logo img {
-        padding-bottom: 1em;
+        padding-bottom: 1.6em;
         width: 50px; } }
     header .left .logo span {
+      font-family: 'Oleo Script', cursive;
       color: #22A557;
       font-size: 2.2em;
-      font-weight: bold;
       margin: 0 0.5em 0 0.1em; }
     header .left .logo a:hover {
       text-decoration: none; }
@@ -9685,9 +9683,6 @@ header {
     header .left .nav-header {
       line-height: 1.2em;
       padding-top: 0.2em; }
-      header .left .nav-header ul {
-        display: flex;
-        flex-direction: row; }
       header .left .nav-header a {
         color: #ffffff;
         font-size: 0.8em;
@@ -9719,7 +9714,7 @@ footer {
   background-color: #ffffff;
   padding: 0.5em;
   height: 7em;
-  margin-top: 50px; }
+  border-top: 1px solid #495057; }
   footer .nav-contact {
     padding-top: 0.7em; }
     footer .nav-contact ul li {
@@ -9736,9 +9731,9 @@ footer {
       margin-left: 2.2em;
       width: 30px; }
     footer .logo-copyright span {
+      font-family: 'Oleo Script', cursive;
       color: #22A557;
-      font-size: 1.3em;
-      font-weight: bold; }
+      font-size: 1.3em; }
     footer .logo-copyright a:hover {
       text-decoration: none;
       color: #495057; }
@@ -9962,13 +9957,23 @@ footer {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   color: #f5f9f6;
-  padding: 0.5em;
   align-items: center;
-  left: 50px; }
-  .icon-nav i {
-    padding: 0 0.3em; }
+  left: 20px;
+  align-content: center; }
+  .icon-nav ul {
+    display: flex;
+    flex-direction: row; }
+    .icon-nav ul li {
+      padding: 0 0.3em;
+      margin: 0.9em 0 0 0; }
+      .icon-nav ul li:last-child {
+        flex-direction: row; }
+  .icon-nav a:hover {
+    color: #22A557; }
+  .icon-nav a {
+    color: inherit; }
 
 @media (min-width: 770px) {
   .sub-categories {
@@ -10006,7 +10011,7 @@ footer {
           color: #22A557;
           text-decoration: none; }
   .icon-nav {
-    left: 550px; } }
+    left: 400px; } }
 
 .container-login {
   display: inline-block;
